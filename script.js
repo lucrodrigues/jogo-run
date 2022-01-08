@@ -22,7 +22,7 @@ let isAlive = setInterval(function () {
         
     let fantasmaLeft = parseInt(window.getComputedStyle(fantasma).getPropertyValue("left"));
 
-    if (fantasmaLeft <10 && fantasmaLeft > 0 && personTop >= 120) {
+    if (fantasmaLeft <0 && fantasmaLeft > 0 && personTop >= 120) {
         fantasma.style.animation = 'none'
         fantasma.style.display = 'none'
         resultsDisplay.innerHTML = "GAME OVER"
